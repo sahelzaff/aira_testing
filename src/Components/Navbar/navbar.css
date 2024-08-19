@@ -1,0 +1,72 @@
+/* Ensure mega menu shows on hover */
+.group:hover #collectionsMenu {
+    display: flex;
+  }
+  
+  /* Mega menu container styles */
+  #collectionsMenu {
+    display: none;
+  }
+  
+  /* Image container styles */
+  #collectionsImage img {
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Hide image container initially */
+  #collectionsImage {
+    opacity: 0;
+  }
+  
+  /* Show image container on hover */
+  .group:hover #collectionsImage {
+    opacity: 1;
+  }
+  
+
+  #underline {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  #underline::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    width: 0;
+    height: 3px; /* Thickness of the underline */
+    background-color: #ffc0cb; /* Pink color for the underline */
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+  
+  #underline:hover::after {
+    width: 100%;
+  }
+
+  #underline2 {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  #underline2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px; /* Thickness of the underline */
+    background-color: #ffc0cb; /* Pink color for the underline */
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+  
+  #underline2:hover::after {
+    width: 100%;
+  }
+
+
+  
